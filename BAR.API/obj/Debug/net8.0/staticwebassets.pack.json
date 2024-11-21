@@ -1,0 +1,73 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\BAR.API\\wwwroot\\Images\\Belavia_logo.svg.png",
+      "PackagePath": "staticwebassets\\Images\\Belavia_logo.svg.png"
+    },
+    {
+      "Id": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\BAR.API\\wwwroot\\Images\\bourbon.jpg",
+      "PackagePath": "staticwebassets\\Images\\bourbon.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\BAR.API\\wwwroot\\Images\\bygyfm4q.jpg",
+      "PackagePath": "staticwebassets\\Images\\bygyfm4q.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\BAR.API\\wwwroot\\Images\\craft-beer.jpg",
+      "PackagePath": "staticwebassets\\Images\\craft-beer.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\BAR.API\\wwwroot\\Images\\default-profile-picture.png",
+      "PackagePath": "staticwebassets\\Images\\default-profile-picture.png"
+    },
+    {
+      "Id": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\BAR.API\\wwwroot\\Images\\etiscxe1.png",
+      "PackagePath": "staticwebassets\\Images\\etiscxe1.png"
+    },
+    {
+      "Id": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\BAR.API\\wwwroot\\Images\\fai5edoe.jpg",
+      "PackagePath": "staticwebassets\\Images\\fai5edoe.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\BAR.API\\wwwroot\\Images\\fzlvfzhs.png",
+      "PackagePath": "staticwebassets\\Images\\fzlvfzhs.png"
+    },
+    {
+      "Id": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\BAR.API\\wwwroot\\Images\\mojito.jpg",
+      "PackagePath": "staticwebassets\\Images\\mojito.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\BAR.API\\wwwroot\\Images\\noimage.jpg",
+      "PackagePath": "staticwebassets\\Images\\noimage.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\BAR.API\\wwwroot\\Images\\red-wine.jpg",
+      "PackagePath": "staticwebassets\\Images\\red-wine.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\BAR.API\\wwwroot\\Images\\tequila-shot.jpg",
+      "PackagePath": "staticwebassets\\Images\\tequila-shot.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\BAR.API\\wwwroot\\Images\\zwe55hbn.jpg",
+      "PackagePath": "staticwebassets\\Images\\zwe55hbn.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Bar.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Bar.API.props",
+      "PackagePath": "build\\Bar.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Bar.API.props",
+      "PackagePath": "buildMultiTargeting\\Bar.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Bar.API.props",
+      "PackagePath": "buildTransitive\\Bar.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

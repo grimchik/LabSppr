@@ -1,0 +1,16 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Bar.Domain;
+using Bar.Domain.Entities;
+namespace BAR.API.Data
+{
+    public class AppDbContext : DbContext
+    {
+        public AppDbContext(DbContextOptions<AppDbContext> options)
+            : base(options)
+        {
+        }
+
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Category> Categories { get; set; }
+    }
+}

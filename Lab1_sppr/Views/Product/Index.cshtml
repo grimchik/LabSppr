@@ -1,0 +1,82 @@
+﻿@model Bar.Domain.Models.ListModel<Bar.Domain.Entities.Product>
+
+@{
+    var categories = ViewData["categories"] as IEnumerable<Bar.Domain.Entities.Category>;
+    var currentCategoryNormalizedName = ViewData["currentCategoryNormalizedName"] as string;
+    var currentCategoryName = categories?.FirstOrDefault(c => c.NormalizedName == currentCategoryNormalizedName)?.Name ?? "Все";
+
+    string? category = Context.Request.Query["category"].ToString();
+    int prev = Model.CurrentPage == 1 ? 1 : Model.CurrentPage - 1;
+    int next = Model.CurrentPage == Model.TotalPages ? Model.TotalPages : Model.CurrentPage + 1;
+}
+
+<div class="col-2 border-2">
+    <ul class="nav">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"
+               data-bs-toggle="dropdown"
+               href="#"
+               role="button"
+               aria-expanded="false">
+                @currentCategoryName
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a class="dropdown-item" asp-controller="Product" asp-route-category="">Все</a>
+                </li>
+                @foreach (var item in categories)
+                {
+                    <li>
+                        <a class="dropdown-item" asp-controller="Product" asp-route-category="@item.NormalizedName">
+                            @item.Name
+                        </a>
+                    </li>
+                }
+            </ul>
+
+        </li>
+    </ul>
+</div>
+
+<div class="row">
+    @if (Model.Items != null && Model.Items.Any())
+    {
+        foreach (var item in Model.Items)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="@item.ImagePath" class="card-img-top" alt="@item.Name" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Name</h5>
+                        <p class="card-text">@item.Description</p>
+                        <p class="card-text"><small class="text-muted">Цена: @item.Price</small></p>
+                        <a asp-controller="Cart" asp-action="Add" asp-route-id="@item.ID" asp-route-returnurl="@Context.Request.Path" class="btn btn-primary">Добавить в корзину</a>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <p>Нет доступных товаров в этой категории.</p>
+    }
+</div>
+
+<nav aria-label="Page navigation">
+    <ul class="pagination">
+        <li class="page-item @(Model.CurrentPage == 1 ? "disabled" : "")">
+            <a class="page-link" asp-controller="Product" asp-action="Index" asp-route-category="@currentCategoryNormalizedName" asp-route-pageNo="@prev" tabindex="-1"><<</a>
+        </li>
+
+        @for (int i = 1; i <= Model.TotalPages; i++)
+        {
+            <li class="page-item @(i == Model.CurrentPage ? "active" : "")">
+                <a class="page-link" asp-controller="Product" asp-action="Index" asp-route-category="@currentCategoryNormalizedName" asp-route-pageNo="@i">@i</a>
+            </li>
+        }
+
+        <li class="page-item @(Model.CurrentPage == Model.TotalPages ? "disabled" : "")">
+            <a class="page-link" asp-controller="Product" asp-action="Index" asp-route-category="@currentCategoryNormalizedName" asp-route-pageNo="@next">>></a>
+        </li>
+    </ul>
+</nav>

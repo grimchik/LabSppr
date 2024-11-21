@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "UmI/FORgyohlvg7GQkhVck5TXN72aMwKjtcJCytTqHMZCoJnbGfBiuTRwE1juM1wL4liV/OMs5GdEPtDAEkczQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\Bar.Domain\\Bar.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Александр\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.1.0\\microsoft.aspnetcore.http.features.2.1.0.nupkg.sha512",
+    "C:\\Users\\Александр\\.nuget\\packages\\microsoft.extensions.primitives\\2.1.0\\microsoft.extensions.primitives.2.1.0.nupkg.sha512",
+    "C:\\Users\\Александр\\.nuget\\packages\\system.memory\\4.5.0\\system.memory.4.5.0.nupkg.sha512",
+    "C:\\Users\\Александр\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.0\\system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

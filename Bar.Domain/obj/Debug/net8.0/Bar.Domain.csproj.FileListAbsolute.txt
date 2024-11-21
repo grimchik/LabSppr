@@ -1,0 +1,12 @@
+C:\Users\Александр\source\repos\Lab1_sppr\Bar.Domain\bin\Debug\net8.0\Bar.Domain.deps.json
+C:\Users\Александр\source\repos\Lab1_sppr\Bar.Domain\bin\Debug\net8.0\Bar.Domain.dll
+C:\Users\Александр\source\repos\Lab1_sppr\Bar.Domain\bin\Debug\net8.0\Bar.Domain.pdb
+C:\Users\Александр\source\repos\Lab1_sppr\Bar.Domain\obj\Debug\net8.0\Bar.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Александр\source\repos\Lab1_sppr\Bar.Domain\obj\Debug\net8.0\Bar.Domain.AssemblyInfoInputs.cache
+C:\Users\Александр\source\repos\Lab1_sppr\Bar.Domain\obj\Debug\net8.0\Bar.Domain.AssemblyInfo.cs
+C:\Users\Александр\source\repos\Lab1_sppr\Bar.Domain\obj\Debug\net8.0\Bar.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Александр\source\repos\Lab1_sppr\Bar.Domain\obj\Debug\net8.0\Bar.Domain.dll
+C:\Users\Александр\source\repos\Lab1_sppr\Bar.Domain\obj\Debug\net8.0\refint\Bar.Domain.dll
+C:\Users\Александр\source\repos\Lab1_sppr\Bar.Domain\obj\Debug\net8.0\Bar.Domain.pdb
+C:\Users\Александр\source\repos\Lab1_sppr\Bar.Domain\obj\Debug\net8.0\ref\Bar.Domain.dll
+C:\Users\Александр\source\repos\Lab1_sppr\Bar.Domain\obj\Debug\net8.0\Bar.Domain.csproj.AssemblyReference.cache

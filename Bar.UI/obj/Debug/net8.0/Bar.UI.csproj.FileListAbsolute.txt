@@ -1,0 +1,15 @@
+C:\Users\Александр\source\repos\Lab1_sppr\Bar.UI\obj\Debug\net8.0\Bar.UI.csproj.AssemblyReference.cache
+C:\Users\Александр\source\repos\Lab1_sppr\Bar.UI\obj\Debug\net8.0\Bar.UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Александр\source\repos\Lab1_sppr\Bar.UI\obj\Debug\net8.0\Bar.UI.AssemblyInfoInputs.cache
+C:\Users\Александр\source\repos\Lab1_sppr\Bar.UI\obj\Debug\net8.0\Bar.UI.AssemblyInfo.cs
+C:\Users\Александр\source\repos\Lab1_sppr\Bar.UI\obj\Debug\net8.0\Bar.UI.csproj.CoreCompileInputs.cache
+C:\Users\Александр\source\repos\Lab1_sppr\Bar.UI\bin\Debug\net8.0\Bar.UI.deps.json
+C:\Users\Александр\source\repos\Lab1_sppr\Bar.UI\bin\Debug\net8.0\Bar.UI.dll
+C:\Users\Александр\source\repos\Lab1_sppr\Bar.UI\bin\Debug\net8.0\Bar.UI.pdb
+C:\Users\Александр\source\repos\Lab1_sppr\Bar.UI\bin\Debug\net8.0\Bar.Domain.dll
+C:\Users\Александр\source\repos\Lab1_sppr\Bar.UI\bin\Debug\net8.0\Bar.Domain.pdb
+C:\Users\Александр\source\repos\Lab1_sppr\Bar.UI\obj\Debug\net8.0\Bar.UI.csproj.Up2Date
+C:\Users\Александр\source\repos\Lab1_sppr\Bar.UI\obj\Debug\net8.0\Bar.UI.dll
+C:\Users\Александр\source\repos\Lab1_sppr\Bar.UI\obj\Debug\net8.0\refint\Bar.UI.dll
+C:\Users\Александр\source\repos\Lab1_sppr\Bar.UI\obj\Debug\net8.0\Bar.UI.pdb
+C:\Users\Александр\source\repos\Lab1_sppr\Bar.UI\obj\Debug\net8.0\ref\Bar.UI.dll
