@@ -1,0 +1,43 @@
+﻿@model Bar.Domain.Models.ListModel<Bar.Domain.Entities.Product>
+@addTagHelper *, Lab1_sppr.TagHelpers
+
+@{
+    var categories = ViewData["categories"] as IEnumerable<Bar.Domain.Entities.Category>;
+    var currentCategoryNormalizedName = ViewData["currentCategoryNormalizedName"] as string;
+    var currentCategoryName = categories?.FirstOrDefault(c => c.NormalizedName == currentCategoryNormalizedName)?.Name ?? "Все";
+
+    string? category = Context.Request.Query["category"].ToString();
+    int prev = Model.CurrentPage == 1 ? 1 : Model.CurrentPage - 1;
+    int next = Model.CurrentPage == Model.TotalPages ? Model.TotalPages : Model.CurrentPage + 1;
+}
+
+<div class="row">
+    @if (Model.Items != null && Model.Items.Any())
+    {
+        foreach (var item in Model.Items)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="@item.ImagePath" class="card-img-top" alt="@item.Name" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Name</h5>
+                        <p class="card-text">@item.Description</p>
+                        <p class="card-text"><small class="text-muted">Цена: @item.Price</small></p>
+                        <form asp-controller="Cart" asp-action="Add" asp-route-id="@item.ID" asp-route-returnurl="@Context.Request.Path" method="post" style="display:inline;">
+                            <button type="submit" class="btn btn-primary">Добавить в корзину</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <p>Нет доступных товаров в этой категории.</p>
+    }
+</div>
+
+<pager current-page="@Model.CurrentPage"
+       total-pages="@Model.TotalPages"
+       category="@currentCategoryNormalizedName">
+</pager>

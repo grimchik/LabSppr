@@ -273,3 +273,4 @@ C:\Users\Александр\source\repos\Lab1_sppr\BAR.API\bin\Debug\net8.0\Micr
 C:\Users\Александр\source\repos\Lab1_sppr\BAR.API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Александр\source\repos\Lab1_sppr\BAR.API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\Александр\source\repos\Lab1_sppr\BAR.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Users\Александр\source\repos\Lab1_sppr\BAR.API\obj\Debug\net8.0\Bar.API.sourcelink.json

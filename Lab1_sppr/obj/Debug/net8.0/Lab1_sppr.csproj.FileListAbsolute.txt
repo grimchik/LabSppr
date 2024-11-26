@@ -282,3 +282,4 @@ C:\Users\Александр\source\repos\Lab1_sppr\Lab1_sppr\bin\Debug\net8.0\Sw
 C:\Users\Александр\source\repos\Lab1_sppr\Lab1_sppr\bin\Debug\net8.0\Bar.API.dll
 C:\Users\Александр\source\repos\Lab1_sppr\Lab1_sppr\bin\Debug\net8.0\Bar.API.pdb
 C:\Users\Александр\source\repos\Lab1_sppr\Lab1_sppr\obj\Debug\net8.0\Lab1_sppr.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Александр\source\repos\Lab1_sppr\Lab1_sppr\obj\Debug\net8.0\Lab1_sppr.sourcelink.json

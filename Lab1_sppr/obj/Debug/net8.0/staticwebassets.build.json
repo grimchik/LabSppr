@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jchwxwodk7EJpmG/87pjxNRhOMgG353EiG1kyPwibbY=",
+  "Hash": "4ZUa/ty6DRmdIyNVgXyDK7XJs6jxrObzL1gc4f6b3tQ=",
   "Source": "Lab1_sppr",
   "BasePath": "_content/Lab1_sppr",
   "Mode": "Default",
@@ -35,6 +35,44 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\BAR.API\\wwwroot\\Images\\01bbi0zp.jpg",
+      "SourceId": "Bar.API",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\BAR.API\\wwwroot\\",
+      "BasePath": "_content/Bar.API",
+      "RelativePath": "Images/01bbi0zp.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\01bbi0zp.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\BAR.API\\wwwroot\\Images\\avggsauy.png",
+      "SourceId": "Bar.API",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\BAR.API\\wwwroot\\",
+      "BasePath": "_content/Bar.API",
+      "RelativePath": "Images/avggsauy.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\avggsauy.png"
+    },
     {
       "Identity": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\BAR.API\\wwwroot\\Images\\Belavia_logo.svg.png",
       "SourceId": "Bar.API",

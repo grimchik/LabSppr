@@ -18,10 +18,19 @@ using Bar.UI.Services.TokenAccessor;
 using Bar.UI.Services.AuthService;
 using System.Net.Http.Headers;
 using Bar.UI.Authorization;
+using Bar.UI.Services.ProductService;
+using Bar.Domain.Models;
+using Serilog;
+using Lab1_sppr.Logger;
 
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
+builder.Host.UseSerilog((context, configuration) =>
+{
+    configuration.ReadFrom.Configuration(context.Configuration)
+                 .Enrich.FromLogContext()
+                 .WriteTo.Console()
+                 .WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Day);
+});
 builder.Services.AddControllersWithViews();
 builder.RegisterCustomServices();
 builder.Services.AddRazorPages();
@@ -50,8 +59,10 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowAllOrigins",
         builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 });
-
 builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<Cart, SessionCart>(); 
+builder.Services.AddSession(); 
+builder.Services.AddDistributedMemoryCache();
 builder.Services.AddScoped<ITokenAccessor, KeycloakTokenAccessor>();
 var keycloakData = builder.Configuration.GetSection("Keycloak").Get<KeycloakData>();
 builder.Services
@@ -71,7 +82,7 @@ builder.Services
     options.ClientId = keycloakData.ClientId;
     options.ClientSecret = keycloakData.ClientSecret;
     options.ResponseType = OpenIdConnectResponseType.Code;
-    options.Scope.Add("openid"); // Customize scopes as needed
+    options.Scope.Add("openid"); 
     options.SaveTokens = true;
     options.RequireHttpsMetadata = false; 
 options.MetadataAddress =$"{keycloakData.Host}/realms/{keycloakData.Realm}/.well-known/openid-configuration";
@@ -79,19 +90,19 @@ options.MetadataAddress =$"{keycloakData.Host}/realms/{keycloakData.Realm}/.well
 var app = builder.Build();
 app.UseStaticFiles();
 app.UseCors("AllowAllOrigins");
-// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
 }
-
+app.UseSerilogRequestLogging();
+app.UseMiddleware<RequestLoggingMiddleware>();
 app.UseHttpsRedirection();
-
-app.UseRouting();
 app.MapRazorPages();
+app.UseRouting();
 app.UseAuthorization();
-
+app.UseSession();
+app.MapDefaultControllerRoute();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

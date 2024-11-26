@@ -1,25 +1,23 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Bar.Domain.Models;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
-
+using Bar.UI.Extensions;
 namespace Lab1_sppr.ViewComponents
 {
-    public class Cart : ViewComponent
+    public class CartViewComponent : ViewComponent
     {
-        public async Task<IViewComponentResult> InvokeAsync()
-        {
-            var cartInfo = new CartInfo
-            {
-                TotalAmount = 0.0m,
-                ItemCount = 0       
-            };
+        private readonly Cart _cart;
 
-            return View(cartInfo);
+        public CartViewComponent(Cart cart)
+        {
+            _cart = cart;
+        }
+
+        public IViewComponentResult Invoke()
+        {
+            return View(_cart); 
         }
     }
 
-    public class CartInfo
-    {
-        public decimal TotalAmount { get; set; }
-        public int ItemCount { get; set; }
-    }
 }

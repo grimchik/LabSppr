@@ -55,9 +55,7 @@ namespace Bar.API.Services
 
         public async Task<ResponseData<Product>> GetProductByIdAsync(int id)
         {
-            var product = await _context.Products
-                .Include(p => p.Category) 
-                .FirstOrDefaultAsync(p => p.ID == id);
+            var product = await _context.Products.FindAsync(id);
 
             return product != null
                 ? ResponseData<Product>.Success(product)

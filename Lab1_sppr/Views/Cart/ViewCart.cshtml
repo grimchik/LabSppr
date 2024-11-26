@@ -1,0 +1,40 @@
+﻿@model Bar.Domain.Models.Cart
+
+<h2>Корзина</h2>
+
+<table class="table table-bordered">
+    <thead class="thead-light">
+        <tr>
+            <th>Изображение</th>
+            <th>Название</th>
+            <th>Описание</th>
+            <th>Количество</th>
+            <th>Сумма</th>
+            <th>Действия</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.CartItems.Values)
+        {
+            <tr>
+                <td>
+                    <img src="@item.Item.ImagePath" alt="@item.Item.Name" class="img-thumbnail" style="max-width: 100px;" />
+                </td>
+                <td>@item.Item.Name</td>
+                <td>@item.Item.Description</td>
+                <td>@item.Count</td>
+                <td>@(item.Item.Price * item.Count)</td>
+                <td>
+                    <form asp-controller="Cart" asp-action="Remove" asp-route-id="@item.Item.ID" asp-route-returnurl="@Context.Request.Path" method="post">
+                        <button type="submit" class="btn btn-danger btn-sm">
+                            <i class="bi bi-trash"></i> Удалить
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h3>Итого: @Model.TotalAmount руб.</h3>
+

@@ -1,8 +1,16 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\BAR.API\\wwwroot\\Images\\01bbi0zp.jpg",
+      "PackagePath": "staticwebassets\\Images\\01bbi0zp.jpg"
+    },
+    {
       "Id": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\BAR.API\\wwwroot\\Images\\Belavia_logo.svg.png",
       "PackagePath": "staticwebassets\\Images\\Belavia_logo.svg.png"
+    },
+    {
+      "Id": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\BAR.API\\wwwroot\\Images\\avggsauy.png",
+      "PackagePath": "staticwebassets\\Images\\avggsauy.png"
     },
     {
       "Id": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\BAR.API\\wwwroot\\Images\\bourbon.jpg",

@@ -10,3 +10,4 @@ C:\Users\Александр\source\repos\Lab1_sppr\Bar.Domain\obj\Debug\net8.0\r
 C:\Users\Александр\source\repos\Lab1_sppr\Bar.Domain\obj\Debug\net8.0\Bar.Domain.pdb
 C:\Users\Александр\source\repos\Lab1_sppr\Bar.Domain\obj\Debug\net8.0\ref\Bar.Domain.dll
 C:\Users\Александр\source\repos\Lab1_sppr\Bar.Domain\obj\Debug\net8.0\Bar.Domain.csproj.AssemblyReference.cache
+C:\Users\Александр\source\repos\Lab1_sppr\Bar.Domain\obj\Debug\net8.0\Bar.Domain.sourcelink.json

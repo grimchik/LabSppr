@@ -5,5 +5,15 @@
 <div class="navbar-nav">
     <a class="nav-item nav-link @(controller == "home" ? "active" : "")" asp-controller="Home" asp-action="Index">Лб 1</a>
     <a class="nav-item nav-link @(controller == "product" ? "active" : "")" asp-controller="Product" asp-action="Index">Каталог</a>
-    <a class="nav-item nav-link @(area == "admin" ? "active" : "")" href="/Admin/Index">Администрирование</a>
+
+    @if (User.Identity?.IsAuthenticated == true)
+
+    {
+        <a class="nav-item nav-link @(controller == "cart" ? "active" : "")" asp-controller="Cart" asp-action="ViewCart">Корзина</a>
+    }
+
+    @if (User.IsInRole("POWER-USER"))
+    {
+        <a class="nav-item nav-link @(area == "admin" ? "active" : "")" href="/Admin/Index">Администрирование</a>
+    }
 </div>

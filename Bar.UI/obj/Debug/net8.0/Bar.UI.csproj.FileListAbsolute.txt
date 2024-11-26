@@ -13,3 +13,4 @@ C:\Users\Александр\source\repos\Lab1_sppr\Bar.UI\obj\Debug\net8.0\Bar.U
 C:\Users\Александр\source\repos\Lab1_sppr\Bar.UI\obj\Debug\net8.0\refint\Bar.UI.dll
 C:\Users\Александр\source\repos\Lab1_sppr\Bar.UI\obj\Debug\net8.0\Bar.UI.pdb
 C:\Users\Александр\source\repos\Lab1_sppr\Bar.UI\obj\Debug\net8.0\ref\Bar.UI.dll
+C:\Users\Александр\source\repos\Lab1_sppr\Bar.UI\obj\Debug\net8.0\Bar.UI.sourcelink.json

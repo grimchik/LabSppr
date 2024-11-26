@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Bar.Domain.Entities;
 using Bar.UI.Services.ProductService;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Lab1_sppr.Areas.Admin.Pages.Products
 {
