@@ -1,0 +1,52 @@
+﻿@using Microsoft.Extensions.Configuration
+
+@if (SelectedProduct != null)
+{
+    <div class="card">
+        <div class="card-header">
+            <h4>@SelectedProduct.Name</h4>
+        </div>
+        <div class="card-body">
+            @if (!string.IsNullOrEmpty(SelectedProduct.ImagePath))
+            {
+                <img src="@GetImageUrl(SelectedProduct.ImagePath)" alt="Product image" class="img-thumbnail mb-3" style="max-width: 200px;" />
+            }
+            else
+            {
+                <span class="oi oi-image" title="No Image Available" aria-hidden="true"></span>
+            }
+
+            <p><strong>ID:</strong> @SelectedProduct.ID</p>
+            <p><strong>Описание:</strong> @SelectedProduct.Description</p>
+            <p><strong>Категория:</strong> @SelectedProduct.CategoryID</p>
+        </div>
+    </div>
+}
+else
+{
+    <p>Выберите объект для просмотра подробной информации.</p>
+}
+
+@code {
+    [Parameter] public Product? SelectedProduct { get; set; }
+    [Inject] IConfiguration Configuration { get; set; } = default!;
+
+    private string GetImageUrl(string relativePath)
+    {
+        // Проверяем, является ли путь абсолютным
+        if (Uri.IsWellFormedUriString(relativePath, UriKind.Absolute))
+        {
+            return relativePath; // Если путь уже абсолютный, возвращаем как есть
+        }
+
+        // Получаем базовый URL из конфигурации
+        var baseUrl = Configuration["ImageBaseUrl"];
+
+        // Убираем лишние слэши в начале и конце
+        relativePath = relativePath.TrimStart('/');
+
+        // Формируем корректный URL
+        return $"{baseUrl.TrimEnd('/')}/Images/{relativePath}";
+    }
+
+}

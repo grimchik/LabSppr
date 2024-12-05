@@ -1,0 +1,32 @@
+﻿@page "/products"
+@using Bar.BlazorWasm.Services
+@attribute [Authorize]
+@inject IDataService DataService
+
+<h3>Меню дня</h3>
+
+<CategorySelector /> <!-- Компонент выбора категории -->
+<ProductsList ProductSelected="OnProductSelected" />
+<Pager />
+<ProductDetail SelectedProduct="SelectedProduct" />
+
+@code {
+    private Product? SelectedProduct { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        DataService.DataLoaded += StateHasChanged;
+        await DataService.GetProductListAsync();
+    }
+
+    private async Task OnProductSelected(int id)
+    {
+        SelectedProduct = DataService.Products.FirstOrDefault(p => p.ID == id);
+        await InvokeAsync(StateHasChanged);
+    }
+
+    public void Dispose()
+    {
+        DataService.DataLoaded -= StateHasChanged;
+    }
+}

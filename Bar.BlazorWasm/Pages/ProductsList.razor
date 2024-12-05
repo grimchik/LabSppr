@@ -1,0 +1,44 @@
+﻿@using Bar.Domain.Models
+@using Bar.BlazorWasm.Services
+@if (DataService.Products == null || !DataService.Products.Any())
+{
+    <p>Loading...</p>
+}
+else
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in DataService.Products)
+            {
+                <tr>
+                    <td>@product.Name</td>
+                    <td>@product.Description</td>
+                    <td>@product.Price.ToString("C")</td>
+                    <td>
+                        <button class="btn btn-info" @onclick="() => OnProductSelected(product.ID)">
+                            🔍
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    [Parameter] public EventCallback<int> ProductSelected { get; set; }
+    [Inject] IDataService DataService { get; set; }
+
+    private void OnProductSelected(int id)
+    {
+        ProductSelected.InvokeAsync(id);
+    }
+}

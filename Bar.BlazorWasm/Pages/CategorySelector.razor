@@ -1,0 +1,48 @@
+﻿@using Bar.BlazorWasm.Services
+@inject IDataService DataService
+
+<div class="mb-3">
+    <label for="categorySelector" class="form-label">Select Category</label>
+    <select id="categorySelector" class="form-select" @bind="SelectedCategoryNormalizedName">
+        <option value="">Все</option>
+        @if (DataService.Categories != null && DataService.Categories.Any())
+        {
+            @foreach (var category in DataService.Categories)
+            {
+                <option value="@category.NormalizedName">@category.Name</option>
+            }
+        }
+        else
+        {
+            <option value="">Loading...</option>
+        }
+    </select>
+</div>
+
+@if (DataService.SelectedCategory != null)
+{
+    <p>Current Category: @DataService.SelectedCategory.Name</p>
+}
+
+@code {
+    private string SelectedCategoryNormalizedName
+    {
+        get => DataService.SelectedCategory?.NormalizedName;
+        set
+        {
+            DataService.SelectedCategory = DataService.Categories.FirstOrDefault(c => c.NormalizedName == value);
+            // Когда категория изменена, загружаем продукты
+            _ = DataService.GetProductListAsync();
+        }
+    }
+
+    // Вызываем метод загрузки категорий при инициализации компонента
+    protected override async Task OnInitializedAsync()
+    {
+        // Загружаем категории
+        await DataService.GetCategoryListAsync();
+
+        // Устанавливаем начальное значение в "All Categories"
+        SelectedCategoryNormalizedName = string.Empty;  // Пустое значение для всех категорий
+    }
+}

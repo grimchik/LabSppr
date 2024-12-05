@@ -1,0 +1,2 @@
+2024-11-30 00:17:54.797 +03:00 [INF] HTTP GET / responded 200 in 720.2725 ms
+2024-11-30 00:21:58.839 +03:00 [INF] HTTP GET / responded 200 in 472.9788 ms

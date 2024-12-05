@@ -283,3 +283,12 @@ C:\Users\Александр\source\repos\Lab1_sppr\Lab1_sppr\bin\Debug\net8.0\Ba
 C:\Users\Александр\source\repos\Lab1_sppr\Lab1_sppr\bin\Debug\net8.0\Bar.API.pdb
 C:\Users\Александр\source\repos\Lab1_sppr\Lab1_sppr\obj\Debug\net8.0\Lab1_sppr.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Александр\source\repos\Lab1_sppr\Lab1_sppr\obj\Debug\net8.0\Lab1_sppr.sourcelink.json
+C:\Users\Александр\source\repos\Lab1_sppr\Lab1_sppr\bin\Debug\net8.0\Serilog.dll
+C:\Users\Александр\source\repos\Lab1_sppr\Lab1_sppr\bin\Debug\net8.0\Serilog.AspNetCore.dll
+C:\Users\Александр\source\repos\Lab1_sppr\Lab1_sppr\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+C:\Users\Александр\source\repos\Lab1_sppr\Lab1_sppr\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+C:\Users\Александр\source\repos\Lab1_sppr\Lab1_sppr\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+C:\Users\Александр\source\repos\Lab1_sppr\Lab1_sppr\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+C:\Users\Александр\source\repos\Lab1_sppr\Lab1_sppr\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+C:\Users\Александр\source\repos\Lab1_sppr\Lab1_sppr\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+C:\Users\Александр\source\repos\Lab1_sppr\Lab1_sppr\bin\Debug\net8.0\Serilog.Sinks.File.dll

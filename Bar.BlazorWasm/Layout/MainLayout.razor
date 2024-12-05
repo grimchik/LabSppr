@@ -1,0 +1,42 @@
+﻿@inherits LayoutComponentBase
+@inject NavigationManager NavigationManager
+
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <main>
+        <div class="top-row px-4 auth">
+            <AuthorizeView>
+                <Authorized>
+                    <p>Добро пожаловать, @context.User.FindFirst("preferred_username")?.Value!</p>
+                    <button class="btn btn-link" @onclick="Logout">Выйти</button>
+                </Authorized>
+                <NotAuthorized>
+                    <button class="btn btn-link" @onclick="Login">Войти</button>
+                </NotAuthorized>
+            </AuthorizeView>
+
+            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+        </div>
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+
+@code {
+    private void Login()
+    {
+        // Перенаправление на страницу входа (OIDC)
+        NavigationManager.NavigateTo("authentication/login");
+    }
+
+    private void Logout()
+    {
+        // Перенаправление на страницу выхода (OIDC)
+        NavigationManager.NavigateTo("authentication/logout");
+    }
+}

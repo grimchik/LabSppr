@@ -1,0 +1,69 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\Bar.BlazorWasm\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\Bar.BlazorWasm\\obj\\Debug\\net8.0\\compressed\\sayhd2kf2b.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\Bar.BlazorWasm\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Bar.BlazorWasm.styles.css",
+      "PackagePath": "staticwebassets\\Bar.BlazorWasm.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\Bar.BlazorWasm\\wwwroot\\appsettings.Development.json",
+      "PackagePath": "staticwebassets\\appsettings.Development.json"
+    },
+    {
+      "Id": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\Bar.BlazorWasm\\wwwroot\\appsettings.json",
+      "PackagePath": "staticwebassets\\appsettings.json"
+    },
+    {
+      "Id": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\Bar.BlazorWasm\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\Bar.BlazorWasm\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\Bar.BlazorWasm\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\Bar.BlazorWasm\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\Bar.BlazorWasm\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\Bar.BlazorWasm\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Александр\\source\\repos\\Lab1_sppr\\Bar.BlazorWasm\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Bar.BlazorWasm.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Bar.BlazorWasm.props",
+      "PackagePath": "build\\Bar.BlazorWasm.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Bar.BlazorWasm.props",
+      "PackagePath": "buildMultiTargeting\\Bar.BlazorWasm.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Bar.BlazorWasm.props",
+      "PackagePath": "buildTransitive\\Bar.BlazorWasm.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

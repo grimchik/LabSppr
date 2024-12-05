@@ -1,0 +1,45 @@
+﻿@using Bar.BlazorWasm.Services
+@inject IDataService DataService
+
+@if (DataService.TotalPages > 1)
+{
+    <nav>
+        <ul class="pagination">
+            <li class="page-item @(DataService.CurrentPage == 1 ? "disabled" : "")">
+                <button class="page-link" @onclick="() => SelectPage(DataService.CurrentPage - 1)">
+                    «
+                </button>
+            </li>
+            @for (int i = 1; i <= DataService.TotalPages; i++)
+            {
+                int currentPage = i;
+                <li class="page-item @(DataService.CurrentPage == i ? "active" : "")">
+                    <button class="page-link" @onclick="() => SelectPage(currentPage)">
+                        @i
+                    </button>
+                </li>
+            }
+            <li class="page-item @(DataService.CurrentPage == DataService.TotalPages ? "disabled" : "")">
+                <button class="page-link" @onclick="() => SelectPage(DataService.CurrentPage + 1)">
+                    »
+                </button>
+            </li>
+        </ul>
+    </nav>
+}
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        await DataService.GetProductListAsync();
+        DataService.DataLoaded += StateHasChanged;
+    }
+    private async Task SelectPage(int page)
+    {
+        if (page != DataService.CurrentPage && page > 0 && page <= DataService.TotalPages)
+        {
+            await DataService.GetProductListAsync(page);
+        }
+
+    }
+}

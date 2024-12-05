@@ -1,0 +1,35 @@
+2024-11-30 09:29:21.163 +03:00 [INF] HTTP GET / responded 200 in 3886.4405 ms
+2024-11-30 09:32:22.840 +03:00 [INF] ---> request /Account/Login returns 302
+2024-11-30 09:32:22.846 +03:00 [INF] HTTP GET /Account/Login responded 302 in 269.2527 ms
+2024-11-30 09:32:25.676 +03:00 [INF] HTTP GET / responded 200 in 36.3752 ms
+2024-11-30 09:32:28.713 +03:00 [INF] Fetching categories...
+2024-11-30 09:32:28.862 +03:00 [INF] Categories fetched: 6
+2024-11-30 09:32:28.869 +03:00 [INF] Fetching product list...
+2024-11-30 09:32:28.966 +03:00 [INF] Products fetched: 3
+2024-11-30 09:32:28.969 +03:00 [INF] Returning full view for products.
+2024-11-30 09:32:29.011 +03:00 [INF] HTTP GET /Catalog responded 200 in 364.5910 ms
+2024-11-30 09:32:32.739 +03:00 [INF] ---> request /Cart/add/2 returns 302
+2024-11-30 09:32:32.744 +03:00 [INF] HTTP POST /Cart/add/2 responded 302 in 389.0081 ms
+2024-11-30 09:32:32.770 +03:00 [INF] Fetching categories...
+2024-11-30 09:32:32.788 +03:00 [INF] Categories fetched: 6
+2024-11-30 09:32:32.791 +03:00 [INF] Fetching product list...
+2024-11-30 09:32:32.821 +03:00 [INF] Products fetched: 3
+2024-11-30 09:32:32.824 +03:00 [INF] Returning full view for products.
+2024-11-30 09:32:32.894 +03:00 [INF] HTTP GET /Catalog responded 200 in 130.6067 ms
+2024-11-30 09:32:33.751 +03:00 [INF] ---> request /Cart/add/1 returns 302
+2024-11-30 09:32:33.759 +03:00 [INF] HTTP POST /Cart/add/1 responded 302 in 33.4103 ms
+2024-11-30 09:32:33.776 +03:00 [INF] Fetching categories...
+2024-11-30 09:32:33.788 +03:00 [INF] Categories fetched: 6
+2024-11-30 09:32:33.790 +03:00 [INF] Fetching product list...
+2024-11-30 09:32:33.812 +03:00 [INF] Products fetched: 3
+2024-11-30 09:32:33.815 +03:00 [INF] Returning full view for products.
+2024-11-30 09:32:33.824 +03:00 [INF] HTTP GET /Catalog responded 200 in 49.1438 ms
+2024-11-30 09:32:34.924 +03:00 [INF] ---> request /Cart/add/2 returns 302
+2024-11-30 09:32:34.928 +03:00 [INF] HTTP POST /Cart/add/2 responded 302 in 21.0970 ms
+2024-11-30 09:32:34.946 +03:00 [INF] Fetching categories...
+2024-11-30 09:32:34.958 +03:00 [INF] Categories fetched: 6
+2024-11-30 09:32:34.960 +03:00 [INF] Fetching product list...
+2024-11-30 09:32:34.986 +03:00 [INF] Products fetched: 3
+2024-11-30 09:32:34.988 +03:00 [INF] Returning full view for products.
+2024-11-30 09:32:34.996 +03:00 [INF] HTTP GET /Catalog responded 200 in 51.9427 ms
+2024-11-30 09:32:35.814 +03:00 [INF] HTTP GET /Cart/view responded 200 in 27.0029 ms

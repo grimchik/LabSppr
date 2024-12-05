@@ -1,0 +1,64 @@
+2024-11-30 02:00:20.695 +03:00 [INF] HTTP GET / responded 200 in 2553.4206 ms
+2024-11-30 02:00:25.025 +03:00 [INF] Fetching categories...
+2024-11-30 02:00:26.502 +03:00 [INF] Categories fetched: 6
+2024-11-30 02:00:26.505 +03:00 [INF] Fetching product list...
+2024-11-30 02:00:27.510 +03:00 [INF] Products fetched: 3
+2024-11-30 02:00:27.511 +03:00 [INF] Returning full view for products.
+2024-11-30 02:00:27.551 +03:00 [INF] HTTP GET /Catalog responded 200 in 2648.3972 ms
+2024-11-30 02:00:31.295 +03:00 [INF] ---> request /Cart/add/1 returns 302
+2024-11-30 02:00:31.298 +03:00 [INF] HTTP POST /Cart/add/1 responded 302 in 245.1823 ms
+2024-11-30 02:00:31.311 +03:00 [INF] Fetching categories...
+2024-11-30 02:00:31.322 +03:00 [INF] Categories fetched: 6
+2024-11-30 02:00:31.323 +03:00 [INF] Fetching product list...
+2024-11-30 02:00:31.343 +03:00 [INF] Products fetched: 3
+2024-11-30 02:00:31.344 +03:00 [INF] Returning full view for products.
+2024-11-30 02:00:31.380 +03:00 [INF] HTTP GET /Catalog responded 200 in 71.4369 ms
+2024-11-30 02:00:32.209 +03:00 [INF] ---> request /Cart/add/1 returns 302
+2024-11-30 02:00:32.212 +03:00 [INF] HTTP POST /Cart/add/1 responded 302 in 40.9979 ms
+2024-11-30 02:00:32.224 +03:00 [INF] Fetching categories...
+2024-11-30 02:00:32.234 +03:00 [INF] Categories fetched: 6
+2024-11-30 02:00:32.236 +03:00 [INF] Fetching product list...
+2024-11-30 02:00:32.258 +03:00 [INF] Products fetched: 3
+2024-11-30 02:00:32.259 +03:00 [INF] Returning full view for products.
+2024-11-30 02:00:32.270 +03:00 [INF] HTTP GET /Catalog responded 200 in 46.7123 ms
+2024-11-30 02:00:33.478 +03:00 [INF] HTTP GET /Cart/view responded 200 in 22.5156 ms
+2024-11-30 02:00:35.757 +03:00 [INF] Fetching categories...
+2024-11-30 02:00:35.790 +03:00 [INF] Categories fetched: 6
+2024-11-30 02:00:35.792 +03:00 [INF] Fetching product list...
+2024-11-30 02:00:35.824 +03:00 [INF] Products fetched: 3
+2024-11-30 02:00:35.825 +03:00 [INF] Returning full view for products.
+2024-11-30 02:00:35.833 +03:00 [INF] HTTP GET /Catalog responded 200 in 77.4083 ms
+2024-11-30 02:00:37.360 +03:00 [INF] ---> request /Cart/add/3 returns 302
+2024-11-30 02:00:37.363 +03:00 [INF] HTTP POST /Cart/add/3 responded 302 in 21.1310 ms
+2024-11-30 02:00:37.377 +03:00 [INF] Fetching categories...
+2024-11-30 02:00:37.388 +03:00 [INF] Categories fetched: 6
+2024-11-30 02:00:37.390 +03:00 [INF] Fetching product list...
+2024-11-30 02:00:37.426 +03:00 [INF] Products fetched: 3
+2024-11-30 02:00:37.428 +03:00 [INF] Returning full view for products.
+2024-11-30 02:00:37.439 +03:00 [INF] HTTP GET /Catalog responded 200 in 61.9652 ms
+2024-11-30 02:00:38.002 +03:00 [INF] ---> request /Cart/add/3 returns 302
+2024-11-30 02:00:38.005 +03:00 [INF] HTTP POST /Cart/add/3 responded 302 in 19.8728 ms
+2024-11-30 02:00:38.016 +03:00 [INF] Fetching categories...
+2024-11-30 02:00:38.024 +03:00 [INF] Categories fetched: 6
+2024-11-30 02:00:38.025 +03:00 [INF] Fetching product list...
+2024-11-30 02:00:38.041 +03:00 [INF] Products fetched: 3
+2024-11-30 02:00:38.043 +03:00 [INF] Returning full view for products.
+2024-11-30 02:00:38.051 +03:00 [INF] HTTP GET /Catalog responded 200 in 35.5318 ms
+2024-11-30 02:00:39.467 +03:00 [INF] HTTP GET /Cart/view responded 200 in 19.3347 ms
+2024-11-30 02:00:43.875 +03:00 [INF] ---> request /Cart/remove/3 returns 302
+2024-11-30 02:00:43.877 +03:00 [INF] HTTP POST /Cart/remove/3 responded 302 in 5.7254 ms
+2024-11-30 02:00:43.909 +03:00 [INF] HTTP GET /Cart/view responded 200 in 17.8242 ms
+2024-11-30 02:00:45.061 +03:00 [INF] ---> request /Cart/remove/1 returns 302
+2024-11-30 02:00:45.068 +03:00 [INF] HTTP POST /Cart/remove/1 responded 302 in 9.3319 ms
+2024-11-30 02:00:45.142 +03:00 [INF] HTTP GET /Cart/view responded 200 in 7.7116 ms
+2024-11-30 02:00:48.542 +03:00 [INF] HTTP GET /Admin/Index responded 200 in 339.7694 ms
+2024-11-30 02:00:54.849 +03:00 [INF] HTTP GET /Admin responded 200 in 47.6203 ms
+2024-11-30 02:00:55.402 +03:00 [INF] HTTP GET /Admin responded 200 in 26.7006 ms
+2024-11-30 02:00:55.619 +03:00 [INF] HTTP GET /Admin responded 200 in 21.0952 ms
+2024-11-30 02:00:57.206 +03:00 [INF] HTTP GET /Admin responded 200 in 91.8616 ms
+2024-11-30 02:00:57.806 +03:00 [INF] HTTP GET /Admin responded 200 in 54.7595 ms
+2024-11-30 02:00:58.738 +03:00 [INF] HTTP GET /Admin responded 200 in 344.1713 ms
+2024-11-30 02:00:59.319 +03:00 [INF] HTTP GET /Admin responded 200 in 69.7749 ms
+2024-11-30 02:01:00.362 +03:00 [INF] HTTP GET /Admin responded 200 in 163.0246 ms
+2024-11-30 02:01:01.299 +03:00 [INF] HTTP GET /Admin responded 200 in 92.1997 ms
+2024-11-30 09:04:04.913 +03:00 [INF] HTTP GET / responded 200 in 11790.5183 ms

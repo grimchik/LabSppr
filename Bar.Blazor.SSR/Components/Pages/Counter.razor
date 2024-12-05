@@ -1,0 +1,51 @@
+﻿@page "/counter/{initialCount:int?}" 
+@rendermode InteractiveServer
+@using System.ComponentModel.DataAnnotations
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+<button class="btn btn-secondary" @onclick="IncrementCount">Click me</button>
+<EditForm Model="@counterModel" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    
+    <InputNumber @bind-Value="counterModel.Count" class="form-control" />
+
+    <button class="btn btn-primary" type="submit">Set</button>
+</EditForm>
+
+
+@code {
+    private int currentCount = 0;
+
+    private CounterModel counterModel = new CounterModel();
+
+    [Parameter] public int? InitialCount { get; set; }  
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+
+    private void HandleValidSubmit()
+    {
+        currentCount = counterModel.Count;
+    }
+
+    public class CounterModel
+    {
+        [Range(1, 10, ErrorMessage = "Value must be between 1 and 10.")]
+        public int Count { get; set; }
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (InitialCount.HasValue)
+        {
+            currentCount = InitialCount.Value;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+2024-11-30 01:51:48.701 +03:00 [INF] HTTP GET / responded 200 in 3438.7893 ms
+2024-11-30 01:54:35.164 +03:00 [INF] HTTP GET / responded 200 in 3681.7715 ms
+2024-11-30 01:54:45.650 +03:00 [INF] ---> request /Account/Login returns 302
+2024-11-30 01:54:45.657 +03:00 [INF] HTTP GET /Account/Login responded 302 in 955.5857 ms
+2024-11-30 01:54:59.794 +03:00 [INF] HTTP GET / responded 200 in 112.9366 ms
+2024-11-30 01:55:06.474 +03:00 [INF] HTTP GET /Admin/Index responded 200 in 2126.6588 ms
+2024-11-30 01:55:10.377 +03:00 [INF] HTTP GET /Admin/Edit responded 200 in 751.1920 ms
+2024-11-30 01:55:16.109 +03:00 [INF] HTTP GET /Admin responded 200 in 52.5658 ms
+2024-11-30 01:55:17.406 +03:00 [INF] HTTP GET /Admin/Details responded 200 in 55.2475 ms
+2024-11-30 01:55:21.487 +03:00 [INF] HTTP GET /Admin responded 200 in 39.6228 ms
+2024-11-30 01:55:23.324 +03:00 [INF] HTTP GET /Admin/Details responded 200 in 20.4958 ms
+2024-11-30 01:55:25.555 +03:00 [INF] HTTP GET /Admin responded 200 in 32.0401 ms
+2024-11-30 01:55:26.787 +03:00 [INF] HTTP GET /Admin/Details responded 200 in 26.8123 ms
+2024-11-30 01:55:28.475 +03:00 [INF] HTTP GET /Admin/Edit responded 200 in 21.8303 ms
+2024-11-30 01:56:17.652 +03:00 [INF] ---> request /Admin/Edit returns 302
+2024-11-30 01:56:17.655 +03:00 [INF] HTTP POST /Admin/Edit responded 302 in 403.9410 ms
+2024-11-30 01:56:17.693 +03:00 [INF] HTTP GET /Admin responded 200 in 22.8017 ms
+2024-11-30 01:56:19.293 +03:00 [INF] HTTP GET /Admin/Details responded 200 in 27.0811 ms
+2024-11-30 01:56:22.354 +03:00 [INF] HTTP GET /Admin responded 200 in 32.9275 ms
+2024-11-30 01:56:24.740 +03:00 [INF] HTTP GET /Admin/Edit responded 200 in 20.8317 ms
+2024-11-30 01:56:32.360 +03:00 [INF] ---> request /Admin/Edit returns 302
+2024-11-30 01:56:32.363 +03:00 [INF] HTTP POST /Admin/Edit responded 302 in 45.0719 ms
+2024-11-30 01:56:32.397 +03:00 [INF] HTTP GET /Admin responded 200 in 24.2493 ms
+2024-11-30 01:56:34.632 +03:00 [INF] HTTP GET /Admin/Details responded 200 in 16.0170 ms
+2024-11-30 01:56:36.832 +03:00 [INF] HTTP GET /Admin responded 200 in 141.8191 ms
+2024-11-30 01:56:39.684 +03:00 [INF] HTTP GET /Admin/Details responded 200 in 36.3314 ms
+2024-11-30 01:56:41.103 +03:00 [INF] HTTP GET /Admin/Edit responded 200 in 16.0870 ms
+2024-11-30 01:56:48.760 +03:00 [INF] ---> request /Admin/Edit returns 302
+2024-11-30 01:56:48.766 +03:00 [INF] HTTP POST /Admin/Edit responded 302 in 47.4971 ms
+2024-11-30 01:56:48.813 +03:00 [INF] HTTP GET /Admin responded 200 in 34.2557 ms
+2024-11-30 01:56:51.509 +03:00 [INF] HTTP GET /Admin responded 200 in 18.3584 ms
+2024-11-30 01:56:53.283 +03:00 [INF] HTTP GET /Admin responded 200 in 17.8744 ms
+2024-11-30 01:56:54.312 +03:00 [INF] HTTP GET /Admin responded 200 in 15.5601 ms
+2024-11-30 01:56:54.840 +03:00 [INF] HTTP GET /Admin responded 200 in 14.3227 ms
+2024-11-30 01:56:55.054 +03:00 [INF] HTTP GET /Admin responded 200 in 17.5789 ms
+2024-11-30 01:56:55.232 +03:00 [INF] HTTP GET /Admin responded 200 in 21.2535 ms
+2024-11-30 01:57:07.521 +03:00 [INF] HTTP GET /Admin responded 200 in 37.2855 ms
+2024-11-30 01:57:07.692 +03:00 [INF] HTTP GET /Admin responded 200 in 14.0938 ms
+2024-11-30 01:57:07.859 +03:00 [INF] HTTP GET /Admin responded 200 in 16.6128 ms
+2024-11-30 01:57:08.293 +03:00 [INF] HTTP GET /Admin responded 200 in 15.4085 ms
+2024-11-30 01:57:08.460 +03:00 [INF] HTTP GET /Admin responded 200 in 15.4072 ms
+2024-11-30 01:57:18.754 +03:00 [INF] HTTP GET /Admin responded 200 in 17.4217 ms
+2024-11-30 01:57:19.530 +03:00 [INF] HTTP GET /Admin responded 200 in 20.9530 ms

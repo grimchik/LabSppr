@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Bar.Blazor.SSR.props" />
+</Project>
